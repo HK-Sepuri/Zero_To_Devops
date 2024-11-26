@@ -1,5 +1,7 @@
 # Zero_To_Devops
-My Learning Journey starting with golang from zero to devops projects
+My Self Learning Journey from zero to devops projects :)
+
+Starting with go ,later will learn more languages and skills.
 
 Project 1: Hello World Application
 
