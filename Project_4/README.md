@@ -2,87 +2,87 @@ Commands Used in the Project:
 
 1. PostgreSQL Installation and Setup
 
-    Install PostgreSQL:
+* Install PostgreSQL:
 
-sudo pacman -S postgresql
+`sudo pacman -S postgresql`
 
-Initialize PostgreSQL database:
+* Initialize PostgreSQL database:
 
-sudo -iu postgres initdb -D /var/lib/postgres/data
+`sudo -iu postgres initdb -D /var/lib/postgres/data`
 
-Start PostgreSQL service:
+* Start PostgreSQL service:
 
-sudo systemctl start postgresql
+`sudo systemctl start postgresql`
 
-Enable PostgreSQL to start on boot:
+* Enable PostgreSQL to start on boot:
 
-sudo systemctl enable postgresql
+`sudo systemctl enable postgresql`
 
-Access PostgreSQL shell:
+* Access PostgreSQL shell:
 
-sudo -iu postgres psql
+`sudo -iu postgres psql`
 
-Create a new database:
+* Create a new database:
 
-CREATE DATABASE my_database;
+`CREATE DATABASE my_database;`
 
-Exit PostgreSQL shell:
+* Exit PostgreSQL shell:
 
-    \q
+`\q`
 
 2. Python Virtual Environment Setup
 
-    Create a virtual environment:
+* Create a virtual environment:
 
-python -m venv /home/hari/Zero_To_Devops/Project_4/venv
+`python -m venv /home/hari/Zero_To_Devops/Project_4/venv`
 
-Activate the virtual environment:
+* Activate the virtual environment:
 
-source /home/hari/Zero_To_Devops/Project_4/venv/bin/activate
+`source /home/hari/Zero_To_Devops/Project_4/venv/bin/activate`
 
-Install psycopg2 in the virtual environment:
+* Install psycopg2 in the virtual environment:
 
-    pip install psycopg2
+`pip install psycopg2`
 
 3. Cron Setup
 
-    Install cronie (cron daemon):
+* Install cronie (cron daemon):
 
-sudo pacman -S cronie
+`sudo pacman -S cronie`
 
-Enable and start cron service:
+* Enable and start cron service:
 
-sudo systemctl enable cronie
-sudo systemctl start cronie
+`sudo systemctl enable cronie`
+`sudo systemctl start cronie`
 
-Edit cron jobs:
+* Edit cron jobs:
 
-crontab -e
+`crontab -e`
 
-Check existing cron jobs:
+* Check existing cron jobs:
 
-    crontab -l
+`crontab -l`
 
 4. Cron Job Debugging and Logs
 
-    Check cron service logs:
+* Check cron service logs:
 
-sudo journalctl -u cronie
+`sudo journalctl -u cronie`
 
-Debug cron job output:
+* Debug cron job output:
 
-cat /tmp/cron_debug.log
+`cat /tmp/cron_debug.log`
 
-View custom log file:
+* View custom log file:
 
-    cat /home/hari/Zero_To_Devops/Project_4/backups/cron.log
+`cat /home/hari/Zero_To_Devops/Project_4/backups/cron.log`
 
 5. File and Permission Management
 
-    Check directory permissions:
+* Check directory permissions:
 
-ls -ld /home/hari/Zero_To_Devops/Project_4
+`ls -ld /home/hari/Zero_To_Devops/Project_4`
 
-Change directory permissions:
+* Change directory permissions:
 
-chmod 755 /home/hari/Zero_To_Devops/Project_4
+`chmod 755 /home/hari/Zero_To_Devops/Project_4`
