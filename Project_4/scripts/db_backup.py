@@ -4,7 +4,7 @@ from datetime import datetime
 
 def backup_database():
     db_name = "my_project_db"
-    backup_dir = "../Project_4/backups"  # Adjust if needed
+    backup_dir = "/home/hari/Zero_To_Devops/Project_4/backups"  # Adjust if needed
     os.makedirs(backup_dir, exist_ok=True)
 
     # Create a timestamped backup filename
