@@ -20,3 +20,9 @@ Project 3: Basic Web Server
 ->  Description: Build a simple web server that serves static HTML pages.
 
 ->  Skills Learned: HTTP basics, routing, and serving files using Go's net/http package., 
+
+Project 4: Automated PostgreSQL Database Backup System
+
+-> Description: Created a Python script to automate daily PostgreSQL backups using cron.
+
+-> Skills Learned: PostgreSQL basics, Python scripting, Cron scheduling, Linux system management
