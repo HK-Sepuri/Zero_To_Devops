@@ -2,91 +2,51 @@ Commands Used in the Project:
 
 1. PostgreSQL Installation and Setup
 
-* Install PostgreSQL:
+* Install PostgreSQL: `sudo pacman -S postgresql`
 
-`sudo pacman -S postgresql`
+* Initialize PostgreSQL database: `sudo -iu postgres initdb -D /var/lib/postgres/data`
 
-* Initialize PostgreSQL database:
+* Start PostgreSQL service: `sudo systemctl start postgresql`
 
-`sudo -iu postgres initdb -D /var/lib/postgres/data`
+* Enable PostgreSQL to start on boot: `sudo systemctl enable postgresql`
 
-* Start PostgreSQL service:
+* Access PostgreSQL shell: `sudo -iu postgres psql`
 
-`sudo systemctl start postgresql`
+* Create a new database: `CREATE DATABASE my_database;`
 
-* Enable PostgreSQL to start on boot:
-
-`sudo systemctl enable postgresql`
-
-* Access PostgreSQL shell:
-
-`sudo -iu postgres psql`
-
-* Create a new database:
-
-`CREATE DATABASE my_database;`
-
-* Exit PostgreSQL shell:
-
-`\q`
+* Exit PostgreSQL shell: `\q`
 
 2. Python Virtual Environment Setup
 
-* Create a virtual environment:
+* Create a virtual environment: `python -m venv ~/Zero_To_Devops/Project_4/venv`
 
-`python -m venv ~/Zero_To_Devops/Project_4/venv`
+* Activate the virtual environment: `source ~/Zero_To_Devops/Project_4/venv/bin/activate`
 
-* Activate the virtual environment:
+* Install psycopg2 in the virtual environment: `pip install psycopg2`
 
-`source ~/Zero_To_Devops/Project_4/venv/bin/activate`
-
-* Install psycopg2 in the virtual environment:
-
-`pip install psycopg2`
-
-* Save dependencies to a requirements file:
-
-`pip freeze > ~/Zero_To_Devops/Project_4/requirements.txt`
+* Save dependencies to a requirements file: `pip freeze > ~/Zero_To_Devops/Project_4/requirements.txt`
 
 3. Cron Setup
 
-* Install cronie (cron daemon):
+* Install cronie (cron daemon): `sudo pacman -S cronie`
 
-`sudo pacman -S cronie`
-
-* Enable and start cron service:
-
-`sudo systemctl enable cronie`
+* Enable and start cron service: `sudo systemctl enable cronie`
 `sudo systemctl start cronie`
 
-* Edit cron jobs:
+* Edit cron jobs: `crontab -e`
 
-`crontab -e`
-
-* Check existing cron jobs:
-
-`crontab -l`
+* Check existing cron jobs: `crontab -l`
 
 4. Cron Job Debugging and Logs
 
-* Check cron service logs:
+* Check cron service logs: `sudo journalctl -u cronie`
 
-`sudo journalctl -u cronie`
+* Debug cron job output: `cat /tmp/cron_debug.log`
 
-* Debug cron job output:
-
-`cat /tmp/cron_debug.log`
-
-* View custom log file:
-
-`cat ~/Zero_To_Devops/Project_4/backups/cron.log`
+* View custom log file: `cat ~/Zero_To_Devops/Project_4/backups/cron.log`
 
 5. File and Permission Management
 
-* Check directory permissions:
+* Check directory permissions: `ls -ld ~/Zero_To_Devops/Project_4`
 
-`ls -ld ~/Zero_To_Devops/Project_4`
-
-* Change directory permissions:
-
-`chmod 755 ~/Zero_To_Devops/Project_4`
+* Change directory permissions: `chmod 755 ~/Zero_To_Devops/Project_4`
