@@ -34,15 +34,19 @@ Commands Used in the Project:
 
 * Create a virtual environment:
 
-`python -m venv /home/hari/Zero_To_Devops/Project_4/venv`
+`python -m venv ~/Zero_To_Devops/Project_4/venv`
 
 * Activate the virtual environment:
 
-`source /home/hari/Zero_To_Devops/Project_4/venv/bin/activate`
+`source ~/Zero_To_Devops/Project_4/venv/bin/activate`
 
 * Install psycopg2 in the virtual environment:
 
 `pip install psycopg2`
+
+* Save dependencies to a requirements file:
+
+`pip freeze > ~/Zero_To_Devops/Project_4/requirements.txt`
 
 3. Cron Setup
 
@@ -75,14 +79,14 @@ Commands Used in the Project:
 
 * View custom log file:
 
-`cat /home/hari/Zero_To_Devops/Project_4/backups/cron.log`
+`cat ~/Zero_To_Devops/Project_4/backups/cron.log`
 
 5. File and Permission Management
 
 * Check directory permissions:
 
-`ls -ld /home/hari/Zero_To_Devops/Project_4`
+`ls -ld ~/Zero_To_Devops/Project_4`
 
 * Change directory permissions:
 
-`chmod 755 /home/hari/Zero_To_Devops/Project_4`
+`chmod 755 ~/Zero_To_Devops/Project_4`
