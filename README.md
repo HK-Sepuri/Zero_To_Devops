@@ -26,3 +26,9 @@ Project 4: Automated PostgreSQL Database Backup System
 -> Description: Created a Python script to automate daily PostgreSQL backups using cron.
 
 -> Skills Learned: PostgreSQL basics, Python scripting, Cron scheduling, Linux system management
+
+Project 5: Learing git and import go packages
+
+-> Description: Created a basic go function and importing functions and git branches , merges etc 
+
+-> Skills Learned: Git cmd lines , Go packages 
