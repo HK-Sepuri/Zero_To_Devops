@@ -1,7 +1,7 @@
 # Zero_To_Devops
 My Self Learning Journey from zero to devops projects :)
 
-Starting with go ,later will learn more languages and skills.
+It will be mix of various langaguges like Bash , Python and Go.
 
 Project 1: Hello World Application
 
