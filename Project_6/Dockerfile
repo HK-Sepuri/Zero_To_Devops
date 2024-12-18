@@ -6,6 +6,7 @@ WORKDIR /app
 
 # Copy go.mod and go.sum files to the container
 COPY go.mod go.sum ./
+COPY tasks.db /app/tasks.db
 
 # Download the Go dependencies (it will cache them if the go.mod and go.sum files are not changed)
 RUN go mod tidy
