@@ -31,4 +31,10 @@ Project 5: Learing git and import go packages
 
 -> Description: Created a basic go function and importing functions and git branches , merges etc 
 
--> Skills Learned: Git cmd lines , Go packages 
+-> Skills Learned: Git cmd lines , Go packages
+
+Project 6: Learing RESTful api using go and Docker
+
+-> Description: Built a RESTful API with Go, using SQLite for persistence, Docker for containerization, and Gin for handling HTTP requests
+
+-> Skills Learned: Docker, Gin, RESTful API (basic syntax and use case)
